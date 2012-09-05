@@ -107,7 +107,8 @@
 
       $('#facebox').show().css({
         top:  getPageScroll()[1] + (getPageHeight() / 10),
-        left:  $(window).width() / 2 - ($('#facebox .popup').outerWidth() / 2)
+        //left:  $(window).width() / 2 - ($('#facebox .popup').outerWidth() / 2)     
+        left:   ($(window).width() - $('#facebox').width()) / 2
       })
 
       $(document).bind('keydown.facebox', function(e) {
